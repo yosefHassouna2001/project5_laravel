@@ -1,0 +1,32 @@
+php artisan db:seed --class=CountrySeeder
+
+php artisan db:seed --class=CitySeeder
+
+php artisan db:seed --class=AdminSeeder
+
+php artisan db:seed --class=AuthorSeeder
+
+php artisan db:seed --class=CategorySeeder
+
+php artisan db:seed --class=EloquentSeeder
+
+php artisan db:seed --class=EloquentSeeder
+
+php artisan db:seed --class=EloquentSeeder
+
+php artisan db:seed --class=EloquentSeeder
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
