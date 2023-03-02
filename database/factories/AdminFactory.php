@@ -22,7 +22,7 @@ class AdminFactory extends Factory
             //
             'email' => $this->faker->email(),
             'password' => $this->faker->password(),
-            
+
             'first_name' => $users->first_name,
             // $users->first_name => ->faker->name(),
             'last_name' => $users->last_name,
@@ -33,16 +33,6 @@ class AdminFactory extends Factory
             'status' => $users->status,
             'city_id' => $cities->random(),
 
-                // 'first_name' => $this->faker->firstName(),
-            // 'last_name' => $this->faker->lastName(),
-            // 'mobile' => $this->faker->phoneNumber(),
-            // 'address' => $this->faker->address(),
-            // 'date_of_birth' => $this->faker->date(),
-            // // 'gender' => $this->faker,
-            // // 'status' => $this->faker,
-            // 'city_id' => $cities->random(),
-            // 'email' => $this->faker->email(),
-            // 'password' => $this->faker->password(),
         ];
     }
 }

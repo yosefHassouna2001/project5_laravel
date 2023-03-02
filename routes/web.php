@@ -6,6 +6,8 @@ use App\Http\Controllers\AuthorController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\CompanyBranchController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\CountryController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\ViewerController;
@@ -39,26 +41,16 @@ Route::prefix('cms/admin/')->group(function(){
     Route::get('restoreindex', [AdminController::class, 'restoreindex'])->name('restoreindex');
     Route::get('restore/{id}', [AdminController::class, 'restore'])->name('restore');
 
+    Route::resource('companies', CompanyController::class);
+    Route::post('companies-update/{id}', [CompanyController::class , 'update'])->name('companies-update');
+    Route::get('restoreindex', [CompanyController::class, 'restoreindex'])->name('restoreindex');
+    Route::get('restore/{id}', [CompanyController::class, 'restore'])->name('restore');
 
-    Route::resource('authors', AuthorController::class);
-    Route::post('authors-update/{id}', [AuthorController::class , 'update'])->name('authors-update');
-    
-    Route::resource('categories', CategoryController::class);
-    Route::post('categories-update/{id}', [CategoryController::class , 'update'])->name('categories-update');
+    Route::resource('companybranchs', CompanyBranchController::class);
+    Route::post('companybranchs-update/{id}', [CompanyBranchController::class , 'update'])->name('companybranchs-update');
 
-    Route::resource('articles' , ArticleController::class);
-    Route::post('articles-update/{id}' , [ArticleController::class , 'update'])->name('articles-update');
 
-    Route::get('/index/articles/{id}', [ArticleController::class, 'indexArticle'])->name('indexArticle');
-    Route::get('/create/articles/{id}', [ArticleController::class, 'createArticle'])->name('createArticle');
 
-    Route::resource('sliders' , SliderController::class);
-    Route::post('sliders-update/{id}' , [SliderController::class , 'update' ])->name('sliders-update');
-    
-    Route::resource('viewers' , ViewerController::class);
-    Route::post('viewers-update/{id}' , [ViewerController::class , 'update' ])->name('viewers-update');
-
-    Route::resource('comments' , CommentController::class);
 
 
 });

@@ -248,19 +248,19 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon far fa-user"></i>
                 <p>
-                  Author
+                  Company
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="{{route('authors.index')}}" class="nav-link">
+                  <a href="{{route('companies.index')}}" class="nav-link">
                     <i class="fas fa-list-ul nav-icon"></i>
                     <p>Index</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="{{route('authors.create')}}" class="nav-link">
+                  <a href="{{route('companies.create')}}" class="nav-link">
                     <i class="fas fa-plus nav-icon"></i>
                     <p>Create</p>
                   </a>
@@ -272,19 +272,19 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon far fa-user"></i>
                 <p>
-                  Viewer
+                  Company Branch
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="{{route('viewers.index')}}" class="nav-link">
+                  <a href="{{route('companybranchs.index')}}" class="nav-link">
                     <i class="fas fa-list-ul nav-icon"></i>
                     <p>Index</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="{{route('viewers.create')}}" class="nav-link">
+                  <a href="{{route('companybranchs.create')}}" class="nav-link">
                     <i class="fas fa-plus nav-icon"></i>
                     <p>Create</p>
                   </a>
@@ -292,6 +292,7 @@
 
               </ul>
             </li>
+
 
             <li class="nav-header">Content Mangment</li>
 
@@ -341,97 +342,8 @@
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="fas fa-solid fa-city nav-icon"></i>
-                <p>
-                  Category
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{{route('categories.index')}}" class="nav-link">
-                    <i class="fas fa-list-ul nav-icon"></i>
-                    <p>Index</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{{route('categories.create')}}" class="nav-link">
-                    <i class="fas fa-plus nav-icon"></i>
-                    <p>Create</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-building"></i>
-                <p>
-                  Articles
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{{route('articles.index')}}" class="nav-link">
-                    <i class="fas fa-list-ul nav-icon"></i>
-                    <p>Index</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{{route('articles.create')}}" class="nav-link">
-                    <i class="fas fa-plus nav-icon"></i>
-                    <p>Create</p>
-                  </a>
-                </li>
 
-              </ul>
-            </li>
 
-            <li class="nav-header">WebSite Manegment</li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-building"></i>
-                <p>
-                  Comment
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{{route('comments.index')}}" class="nav-link">
-                    <i class="fas fa-list-ul nav-icon"></i>
-                    <p>Index</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-building"></i>
-                <p>
-                  Sliders
-                  <i class="fas fa-angle-left right"></i>
-                </p>
-              </a>
-              <ul class="nav nav-treeview">
-                <li class="nav-item">
-                  <a href="{{route('sliders.index')}}" class="nav-link">
-                    <i class="fas fa-list-ul nav-icon"></i>
-                    <p>Index</p>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="{{route('sliders.create')}}" class="nav-link">
-                    <i class="fas fa-plus nav-icon"></i>
-                    <p>Create</p>
-                  </a>
-                </li>
-
-              </ul>
-            </li>
-            
             <li class="nav-header">Setting</li>
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -504,7 +416,7 @@
     <!-- Control Sidebar -->
     <aside class="control-sidebar control-sidebar-dark">
       <!-- Control sidebar content goes here -->
-      
+
     </aside>
     <!-- /.control-sidebar -->
   </div>
